@@ -42,7 +42,7 @@
   </div>
   <div class="change-color">
     <div class="icon">
-      <i class="fa fa-cog"></i>
+      <i class="fa fa-cog fa-spin"></i>
     </div>
     <h5 class="ch-color-title">Change Color</h5>
     <ul>
@@ -316,8 +316,8 @@
         <div class="services-item">
           <div class="icon"><i class="fa fa-folder"></i></div>
           <h5 class="title">ICT</h5>
-          <p class="lead">Information And Communication Technology.</p>
-          <p class="lead"><a href="assets/ict.rar"><i class="fa fa-download" style="color: #0a57f9; font-size: 23px;"></i></a>   Download</p>
+          <p class="lead">Information & Comm. Technology</p>
+          <p class="lead"><div id="div1" class="fa" style="color: #0a57f9; font-size: 23px;"></div><a href="assets/ict.rar" style="color: #0a57f9; font-weight: 400;"> Download</a></p>
         </div>
         
       </div>
@@ -327,7 +327,7 @@
           <div class="icon"><i class="fa fa-folder"></i></div>
           <h5 class="title">PIC</h5>
           <p class="lead">Programming in C.</p>
-          <p class="lead"><a href="assets/pic.rar"><i class="fa fa-download" style="color: #0a57f9; font-size: 23px;"></i></a>   Download</p>
+          <p class="lead"><div id="div2" class="fa" style="color: #0a57f9; font-size: 23px;"></div><a href="assets/pic.rar" style="color: #0a57f9; font-weight: 400;"> Download</a></p>
         </div>
       </div>
       <div class="col-md-6 col-lg-4">
@@ -335,7 +335,7 @@
           <div class="icon"><i class="fa fa-folder"></i></div>
           <h5 class="title">WPD</h5>
           <p class="lead">Web Page Desigining.</p>
-          <p class="lead"><a href="assets/wpd.rar"><i class="fa fa-download" style="color: #0a57f9; font-size: 23px;"></i></a>   Download</p>
+          <p class="lead"><div id="div3" class="fa" style="color: #0a57f9; font-size: 23px;"></div><a href="assets/wpd.rar" style="color: #0a57f9; font-weight: 400;"> Download</a></p>
          
         </div>
       </div>
@@ -344,7 +344,7 @@
           <div class="icon"><i class="fa fa-folder"></i></div>
           <h5 class="title">DSU</h5>
           <p class="lead">Data Structures using C.</p>
-          <p class="lead"><a href="assets/dsu.rar"><i class="fa fa-download" style="color: #0a57f9; font-size: 23px;"></i></a>   Download</p>
+          <p class="lead"><div id="div4" class="fa" style="color: #0a57f9; font-size: 23px;"></div><a href="assets/wpd.rar" style="color: #0a57f9; font-weight: 400;"> Download</a></p>
          
         </div>
       </div>
@@ -353,7 +353,7 @@
           <div class="icon"><i class="fa fa-folder"></i></div>
           <h5 class="title">POD</h5>
           <p class="lead">Principals of Database.</p>
-          <p class="lead"><a href="assets/pod.rar"><i class="fa fa-download" style="color: #0a57f9; font-size: 23px;"></i></a>   Download</p>
+          <p class="lead"><div id="div5" class="fa" style="color: #0a57f9; font-size: 23px;"></div><a href="assets/pod.rar" style="color: #0a57f9; font-weight: 400;"> Download</a></p>
          
         </div>
       </div>
@@ -556,6 +556,66 @@
             loop: true
           });
   </script>
+  <script>
+    function openfolder() {
+      var a;
+      a = document.getElementById("div1");
+      a.innerHTML = "&#xf114;";
+      setTimeout(function () {
+          a.innerHTML = "&#xf115;";
+        }, 1000);
+    }
+    openfolder();
+    setInterval(openfolder, 2000);
+    </script>
+    <script>
+      function openfolder() {
+        var a;
+        a = document.getElementById("div2");
+        a.innerHTML = "&#xf114;";
+        setTimeout(function () {
+            a.innerHTML = "&#xf115;";
+          }, 1000);
+      }
+      openfolder();
+      setInterval(openfolder, 2000);
+      </script>
+      <script>
+        function openfolder() {
+          var a;
+          a = document.getElementById("div3");
+          a.innerHTML = "&#xf114;";
+          setTimeout(function () {
+              a.innerHTML = "&#xf115;";
+            }, 1000);
+        }
+        openfolder();
+        setInterval(openfolder, 2000);
+        </script>
+        <script>
+          function openfolder() {
+            var a;
+            a = document.getElementById("div4");
+            a.innerHTML = "&#xf114;";
+            setTimeout(function () {
+                a.innerHTML = "&#xf115;";
+              }, 1000);
+          }
+          openfolder();
+          setInterval(openfolder, 2000);
+          </script>
+          <script>
+            function openfolder() {
+              var a;
+              a = document.getElementById("div5");
+              a.innerHTML = "&#xf114;";
+              setTimeout(function () {
+                  a.innerHTML = "&#xf115;";
+                }, 1000);
+            }
+            openfolder();
+            setInterval(openfolder, 2000);
+            </script>
 </body>
 </html>
 
